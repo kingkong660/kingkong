@@ -28,6 +28,13 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!--redis缓存相关支持-->
+        <dependency>
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-starter-redis</artifactId>
+           <version>1.4.5.RELEASE</version>
+    	</dependency>
+		
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>

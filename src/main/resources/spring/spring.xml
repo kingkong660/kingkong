@@ -30,7 +30,7 @@
 		<!-- 配置资源文件 -->
 		<property name="locations">
 			<list>
-				<value>classpath:mysql.properties</value>
+				<value>classpath:application.properties</value>
 			</list>
 		</property>
 	</bean>
