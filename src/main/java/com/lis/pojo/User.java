@@ -1,25 +1,33 @@
 package com.lis.pojo;
 
+import java.util.Date;
+
 public class User {
-	
-	private String Id;
-	private String userId;
+
+	private String userCode;
+	private int telephone;
 	private String userName;
-	private String userTelephone;
-	private String userPassword;
-	private String userPhoto;
-	private String userIntroduce;
-	public String getId() {
-		return Id;
+	private int userState;
+	private String password;
+	private String popedom;
+	private String email;
+	private String userDescription;
+	private String operator;
+	private Date createdate;
+	private String createtime;
+	private Date modifydate;
+	private String modifytime;
+	public String getUserCode() {
+		return userCode;
 	}
-	public void setId(String id) {
-		Id = id;
+	public void setUserCode(String userCode) {
+		this.userCode = userCode;
 	}
-	public String getUserId() {
-		return userId;
+	public int getTelephone() {
+		return telephone;
 	}
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public void setTelephone(int telephone) {
+		this.telephone = telephone;
 	}
 	public String getUserName() {
 		return userName;
@@ -27,29 +35,68 @@ public class User {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public String getUserTelephone() {
-		return userTelephone;
+	public int getUserState() {
+		return userState;
 	}
-	public void setUserTelephone(String userTelephone) {
-		this.userTelephone = userTelephone;
+	public void setUserState(int userState) {
+		this.userState = userState;
 	}
-	public String getUserPassword() {
-		return userPassword;
+	public String getPassword() {
+		return password;
 	}
-	public void setUserPassword(String userPassword) {
-		this.userPassword = userPassword;
+	public void setPassword(String password) {
+		this.password = password;
 	}
-	public String getUserPhoto() {
-		return userPhoto;
+	public String getPopedom() {
+		return popedom;
 	}
-	public void setUserPhoto(String userPhoto) {
-		this.userPhoto = userPhoto;
+	public void setPopedom(String popedom) {
+		this.popedom = popedom;
 	}
-	public String getUserintroduce() {
-		return userIntroduce;
+	public String getEmail() {
+		return email;
 	}
-	public void setUserintroduce(String userintroduce) {
-		this.userIntroduce = userintroduce;
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getUserDescription() {
+		return userDescription;
+	}
+	public void setUserDescription(String userDescription) {
+		this.userDescription = userDescription;
+	}
+	public String getOperator() {
+		return operator;
+	}
+	public void setOperator(String operator) {
+		this.operator = operator;
+	}
+	public Date getCreatedate() {
+		return createdate;
+	}
+	public void setCreatedate(Date createdate) {
+		this.createdate = createdate;
+	}
+	public String getCreatetime() {
+		return createtime;
+	}
+	public void setCreatetime(String createtime) {
+		this.createtime = createtime;
+	}
+	public Date getModifydate() {
+		return modifydate;
+	}
+	public void setModifydate(Date modifydate) {
+		this.modifydate = modifydate;
+	}
+	public String getModifytime() {
+		return modifytime;
+	}
+	public void setModifytime(String modifytime) {
+		this.modifytime = modifytime;
 	}
 	
+	
+	
+
 }

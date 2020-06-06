@@ -5,10 +5,10 @@
 
 	<!-- 验证用户名或手机号及密码是否正确 -->
 	<select id="queryUser" parameterType="user" resultType="user">
-		select user_id from t_user where
-		 (user_name=#{userName} and user_password=#{userPassword})
+		select * from user where
+		 (userName=#{userName} and password=#{password})
 		 or
-		 (user_telephone=#{userTelephone} and user_password=#{userPassword})
+		 (telephone=#{telephone} and password=#{password})
 	</select>
 	<!-- 验证手机号是否存在 -->
 	<select id="queryUserTelephone" parameterType="String" resultType="user">
@@ -16,7 +16,7 @@
 	</select>
 	
 		
-</mapper>  
+</mapper>   
 
 
 
