@@ -47,18 +47,22 @@
 		<property name="resolveLazily" value="true"></property>
 	</bean>
 	
-	<!-- <mvc:interceptors>
+	<mvc:interceptors>
 		<mvc:interceptor>
-			mapping的path属性就是当前拦截器的拦截规则
-			<mvc:mapping path="/cart/**"/>
-			<bean class="com.jt.easymall.interceptors.UserLoginInterceptor"/>
+			<!-- 先匹配所有路径，然后排除不需要检查的路径 -->
+            <mvc:mapping path="/**" />
+            <!-- 与登录相关的请求 -->
+            <mvc:exclude-mapping path="/login" />
+            <mvc:exclude-mapping path="/user/login_password" />
+            <!-- 以下是静态资源 -->
+            <mvc:exclude-mapping path="/css/**" />
+            <mvc:exclude-mapping path="/fonts/**" />
+            <mvc:exclude-mapping path="/images/**" />
+            <mvc:exclude-mapping path="/js/**" />
+            <mvc:exclude-mapping path="/lib/**" />
+			<bean class="com.lis.interceptors.UserLoginInterceptor"/>
 		</mvc:interceptor>
-		<mvc:interceptor>
-			mapping的path属性就是当前拦截器的拦截规则
-			<mvc:mapping path="/order/**"/>
-			<bean class="com.jt.easymall.interceptors.OrderInterceptor"/>
-		</mvc:interceptor>
-	</mvc:interceptors> -->
+	</mvc:interceptors>
 	
 	
 	

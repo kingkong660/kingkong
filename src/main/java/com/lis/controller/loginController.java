@@ -36,7 +36,7 @@ public class loginController {
 			//说明登录成功了
 			//响应中添加cookie,将ticket放到一个"JT_TICKET"
 			CookieUtils.setCookie(request, response, 
-					"lis_ticket", MD5Util.md5(ticket));
+					user.getUserName(), MD5Util.md5(ticket));
 			result.setStatus(200);
 			result.setData("http://localhost/index");;
 			return result;
