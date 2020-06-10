@@ -7,7 +7,12 @@
 	<settings>
 		<!-- 开启驼峰自动映射 -->
 		<setting name="mapUnderscoreToCamelCase" value="true" />
-		<!-- 二级缓存的总开关  redis完成缓存的功能.不使用数据库自身的缓存-->
-		<setting name="cacheEnabled" value="false" />
+		<!-- 二级缓存的总开关 redis完成缓存的功能.不使用数据库自身的缓存 -->
+		<!-- <setting name="cacheEnabled" value="false" /> -->
+		
+		<!-- 打印查询语句 -->
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+		
 	</settings>
+
 </configuration>
